@@ -10,9 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f41ac77-c199-4b97-85aa-b1b9b225db20" name="Changes" comment="done EntityDao version: Final">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/supermarket/util/PDF/Run.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/supermarket/dao/ProductDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/supermarket/dao/ProductDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/supermarket/dao/ProductDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/supermarket/dao/ProductDaoImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,13 +99,13 @@
       <recent name="org.supermarket.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.org.supermarket.dao.ProductDaoImpl">
-    <configuration name="ProductDaoImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.supermarket.dao.ProductDaoImpl" />
+  <component name="RunManager" selected="Application.CustomerDaoImpl">
+    <configuration name="CustomerDaoImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.supermarket.dao.CustomerDaoImpl" />
       <module name="SuperMarket" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.supermarket.dao.*" />
+          <option name="PATTERN" value="org.supermarket.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,10 +152,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CustomerDaoImpl" />
         <item itemvalue="Application.org.supermarket.dao.ProductDaoImpl" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Application.org.supermarket.dao.ReceiptDaoImpl" />
         <item itemvalue="JUnit.All in SuperMarket" />
-        <item itemvalue="Application.ProductDaoImpl" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +199,8 @@
       <workItem from="1669096792818" duration="131000" />
       <workItem from="1669097129223" duration="652000" />
       <workItem from="1669103781343" duration="2147000" />
-      <workItem from="1669110151894" duration="1614000" />
+      <workItem from="1669110151894" duration="2437000" />
+      <workItem from="1669137450865" duration="370000" />
     </task>
     <task id="LOCAL-00001" summary="done SuppilerDao &amp; ReceiptDao">
       <created>1668934745490</created>
@@ -218,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668939806833</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="done EntityDao version: Final">
+      <created>1669115026861</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669115026861</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +252,15 @@
           <properties class="jakarta.persistence.NoResultException" package="jakarta.persistence" />
           <option name="timeStamp" value="2" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/supermarket/dao/daoInterface/OrderDao.java</url>
+          <line>15</line>
+          <properties class="org.supermarket.dao.daoInterface.OrderDao" method="getOrdersByEmployerName">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>

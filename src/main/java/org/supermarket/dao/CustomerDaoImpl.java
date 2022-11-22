@@ -4,10 +4,12 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 import org.supermarket.dao.daoInterface.CustomerDao;
 import org.supermarket.entity.Customer;
+import org.supermarket.entity.enumP.Gender;
 import org.supermarket.util.HibernateUtil;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.time.LocalDate;
 import java.util.List;
 
 public class CustomerDaoImpl extends UnicastRemoteObject implements CustomerDao {
@@ -21,16 +23,18 @@ public class CustomerDaoImpl extends UnicastRemoteObject implements CustomerDao 
 
 	
 	@Override
-	public boolean addCustomer (Customer customer) throws RemoteException {
+	public Long addCustomer (Customer customer) throws RemoteException {
 		try{
 			entityTransaction.begin();
 			entityManager.persist(customer);
+			
+			entityManager.flush();
 			entityTransaction.commit();
-			return true;
+			return customer.getCustomerId();
 		}catch(Exception e){
 			e.printStackTrace();
 			entityTransaction.rollback();
-			return false;
+			return null;
 		}
 	}
 	
@@ -165,4 +169,6 @@ public class CustomerDaoImpl extends UnicastRemoteObject implements CustomerDao 
 		return Integer.parseInt(entityManager.createNativeQuery("SELECT COUNT(*) FROM customers")
 				.getSingleResult().toString());
 	}
+	
+
 }

@@ -7,7 +7,7 @@ import java.rmi.RemoteException;
 import java.util.List;
 
 public interface CustomerDao extends Remote {
-	boolean addCustomer (Customer customer) throws RemoteException;
+	Long addCustomer (Customer customer) throws RemoteException;
 	
 	List<Customer> getAllCustomers ()throws RemoteException;
 	
