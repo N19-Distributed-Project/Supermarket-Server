@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="SuperMarket:jar2" />
+      <artifact name="SuperMarket:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f41ac77-c199-4b97-85aa-b1b9b225db20" name="Changes" comment="done EntityDao version: Final" />
+    <list default="true" id="8f41ac77-c199-4b97-85aa-b1b9b225db20" name="Changes" comment="done EntityDao version: Final">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/supermarket/util/PDF/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/supermarket/dao/ProductDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/supermarket/dao/ProductDaoImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +84,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;
@@ -96,20 +100,7 @@
       <recent name="org.supermarket.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Server">
-    <configuration name="OrderDaoImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.supermarket.dao.OrderDaoImpl" />
-      <module name="SuperMarket" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.supermarket.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.org.supermarket.dao.ProductDaoImpl">
     <configuration name="ProductDaoImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.supermarket.dao.ProductDaoImpl" />
       <module name="SuperMarket" />
@@ -136,6 +127,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="org.supermarket.dao.ProductDaoImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.supermarket.dao.ProductDaoImpl" />
+      <module name="SuperMarket" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.supermarket.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="org.supermarket.dao.ReceiptDaoImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.supermarket.dao.ReceiptDaoImpl" />
       <module name="SuperMarket" />
@@ -149,8 +153,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="TEST_OBJECT" value="class" />
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -165,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.org.supermarket.dao.ProductDaoImpl" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Application.org.supermarket.dao.ReceiptDaoImpl" />
         <item itemvalue="JUnit.All in SuperMarket" />
         <item itemvalue="Application.ProductDaoImpl" />
-        <item itemvalue="Application.OrderDaoImpl" />
       </list>
     </recent_temporary>
   </component>
@@ -191,6 +197,12 @@
       <workItem from="1669018198554" duration="16349000" />
       <workItem from="1669046412259" duration="345000" />
       <workItem from="1669049460622" duration="447000" />
+      <workItem from="1669050149209" duration="944000" />
+      <workItem from="1669090523220" duration="681000" />
+      <workItem from="1669096792818" duration="131000" />
+      <workItem from="1669097129223" duration="652000" />
+      <workItem from="1669103781343" duration="2147000" />
+      <workItem from="1669110151894" duration="1614000" />
     </task>
     <task id="LOCAL-00001" summary="done SuppilerDao &amp; ReceiptDao">
       <created>1668934745490</created>

@@ -84,11 +84,11 @@ public class ProductDaoImpl extends UnicastRemoteObject implements ProductDao {
 	
 	@Override
 	public List<Product> getProductByNameLike (String name) throws RemoteException {
-		String s = "'%" + name + "%'";
 		try{
 			entityTransaction.begin();
-			List<Product> products = entityManager.createNativeQuery("select * from products where products.productName like :name", Product.class)
-					.setParameter("name", s).getResultList();
+			List<Product> products = entityManager.createNativeQuery("select * from products " +
+							"where products.productName like :name", Product.class)
+					.setParameter("name", name).getResultList();
 			entityTransaction.commit();
 			return products;
 		}catch(Exception e){
@@ -243,4 +243,6 @@ public class ProductDaoImpl extends UnicastRemoteObject implements ProductDao {
 		return Integer.parseInt(entityManager.createNativeQuery("select count(*) from products").getSingleResult().toString());
 		
 	}
+	
+
 }
