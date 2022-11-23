@@ -9,9 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f41ac77-c199-4b97-85aa-b1b9b225db20" name="Changes" comment="done EntityDao version: Final">
+    <list default="true" id="8f41ac77-c199-4b97-85aa-b1b9b225db20" name="Changes" comment="fix addCustomer from CustomerDaoIml">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/supermarket/util/PrintPDF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/supermarket/dao/ProductDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/supermarket/dao/ProductDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/supermarket/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/supermarket/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/supermarket/util/PDF/Run.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/supermarket/dao/CustomerDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/supermarket/dao/CustomerDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/supermarket/dao/OrderDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/supermarket/dao/OrderDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/supermarket/dao/daoInterface/CustomerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/supermarket/dao/daoInterface/CustomerDao.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +84,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Intellij_Workspace/Distributed_Programing/BTL/SuperMarket&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Intellij_Workspace/Distributed_Programing/BTL/SuperMarket-Server&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -99,13 +106,39 @@
       <recent name="org.supermarket.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CustomerDaoImpl">
+  <component name="RunManager" selected="Application.PrintPdf">
     <configuration name="CustomerDaoImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.supermarket.dao.CustomerDaoImpl" />
       <module name="SuperMarket" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.supermarket.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrintPDF" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.supermarket.util.PrintPDF" />
+      <module name="SuperMarket-Server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.supermarket.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrintPdf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.supermarket.util.PrintPdf" />
+      <module name="SuperMarket-Server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.supermarket.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,40 +172,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.supermarket.dao.ReceiptDaoImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.supermarket.dao.ReceiptDaoImpl" />
-      <module name="SuperMarket" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.supermarket.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in SuperMarket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SuperMarket" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrintPdf" />
+        <item itemvalue="Application.PrintPDF" />
         <item itemvalue="Application.CustomerDaoImpl" />
         <item itemvalue="Application.org.supermarket.dao.ProductDaoImpl" />
         <item itemvalue="Application.Server" />
-        <item itemvalue="Application.org.supermarket.dao.ReceiptDaoImpl" />
-        <item itemvalue="JUnit.All in SuperMarket" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +206,11 @@
       <workItem from="1669097129223" duration="652000" />
       <workItem from="1669103781343" duration="2147000" />
       <workItem from="1669110151894" duration="2437000" />
-      <workItem from="1669137450865" duration="370000" />
+      <workItem from="1669137450865" duration="2253000" />
+      <workItem from="1669208307915" duration="25000" />
+      <workItem from="1669208409698" duration="38000" />
+      <workItem from="1669219049291" duration="2762000" />
+      <workItem from="1669229761030" duration="670000" />
     </task>
     <task id="LOCAL-00001" summary="done SuppilerDao &amp; ReceiptDao">
       <created>1668934745490</created>
@@ -223,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669115026861</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix addCustomer from CustomerDaoIml">
+      <created>1669138146903</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669138146903</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +260,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="done SuppilerDao &amp; ReceiptDao" />
     <MESSAGE value="done EntityDao version: Final" />
-    <option name="LAST_COMMIT_MESSAGE" value="done EntityDao version: Final" />
+    <MESSAGE value="fix addCustomer from CustomerDaoIml" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix addCustomer from CustomerDaoIml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

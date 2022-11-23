@@ -114,7 +114,7 @@ public class Product implements Serializable {
 		}else if(category == Category.DRINK){
 			this.VAT = 0.05;
 		}else if(category == Category.HOUSEWARES){
-			this.VAT = 0.1;
+			this.VAT = 0.01;
 		}
 	}
 	
