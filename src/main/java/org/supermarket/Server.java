@@ -13,7 +13,7 @@ import java.rmi.registry.LocateRegistry;
 public class Server {
 	public static void main (String[] args) {
 		try{
-			int port = 9000;
+			int port = 9001;
 			LocateRegistry.createRegistry(port);
 			
 			Server.startOn(port, Option.CUSTOMER_DAO);

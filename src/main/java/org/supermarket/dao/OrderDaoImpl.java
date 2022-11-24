@@ -4,12 +4,14 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 import org.supermarket.dao.daoInterface.OrderDao;
 import org.supermarket.entity.Order;
+import org.supermarket.entity.OrderDetail;
 import org.supermarket.entity.enumP.OrderStatus;
 import org.supermarket.util.HibernateUtil;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class OrderDaoImpl extends UnicastRemoteObject implements OrderDao {
@@ -239,6 +241,22 @@ public class OrderDaoImpl extends UnicastRemoteObject implements OrderDao {
 				.createNativeQuery("select count(*) from orders where orderStatus = :orderSatatus ")
 				.setParameter("orderSatatus", OrderStatus.PAID)
 				.getSingleResult().toString());
+	}
+	
+	public static void main (String[] args) throws Exception {
+		EmployeeDaoImpl employeeDao = new EmployeeDaoImpl();
+		CustomerDaoImpl customerDao = new CustomerDaoImpl();
+		OrderDaoImpl orderDao = new OrderDaoImpl();
+		ProductDaoImpl productDao = new ProductDaoImpl();
+		
+		List<OrderDetail> orderDetails = new ArrayList<>();
+		orderDetails.add(new OrderDetail(productDao.getProductById(1L), 1));
+		orderDetails.add(new OrderDetail(productDao.getProductById(2L), 3));
+		
+		
+		Order order = new Order(employeeDao.getEmployeeById(1L), customerDao.getCustomerById(1L), orderDetails, OrderStatus.PAID);
+		
+		System.out.println(orderDao.addOrder(order));
 	}
 }
 
